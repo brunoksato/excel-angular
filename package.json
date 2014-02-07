@@ -1,0 +1,38 @@
+{
+  "name": "excel-angular",
+  "version": "0.0.0",
+  "description": "excel-angular =============",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brunoksato/excel-angular.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brunoksato/excel-angular/issues"
+  },
+  "homepage": "https://github.com/brunoksato/excel-angular",
+"devDependencies": {
+    "gulp-imagemin": "~0.1.5",
+    "gulp-bower": "0.0.2",
+    "gulp-open": "~0.2.8",
+    "gulp-server": "~0.1.0",
+    "express": "~3.4.8",
+    "gulp-livereload": "~0.2.0",
+    "gulp-rename": "~0.2.2",
+    "tiny-lr": "0.0.5",
+    "gulp-concat": "~2.1.7",
+    "gulp-clean": "~0.2.4",
+    "gulp-notify": "~0.4.0",
+    "gulp-jshint": "~1.3.4",
+    "gulp-minify-css": "~0.2.0",
+    "gulp-autoprefixer": "0.0.5",
+    "gulp-cache": "~0.1.1",
+    "gulp": "~3.5.0",
+    "gulp-uglify": "~0.2.0"
+  }
+}

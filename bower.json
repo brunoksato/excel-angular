@@ -1,0 +1,20 @@
+{
+  "name": "excel-angular",
+  "version": "0.0.0",
+  "homepage": "https://github.com/brunoksato/excel-angular",
+  "authors": [
+    "brunoksato <bruno.sato@live.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.1.0",
+    "angular": "~1.2.12"
+  }
+}
