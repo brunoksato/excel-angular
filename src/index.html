@@ -1,10 +1,57 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="appExcel">
 <head>
 	<meta charset="UTF-8">
 	<title>Excel Angular</title>
+
+	<!-- Init css -->
+	<link rel="stylesheet" href="bower_componentes/bootstrap/dist/bootstrap.min.css">
+	<link rel="stylesheet" href="js/vendor/angular-ui-handsontable.full.cs">
+
 </head>
-<body>
+<body ng-controller="ExcelCtrl">
 	
+	<!-- Scope tab main -->
+	<section id="tabExcel" class="form-horizontal" role="form">
+		<div class="row">
+			
+		</div>
+	</section>
+
+	<!-- Scope Planilha -->
+	<section id="planExcel" class="form-horizontal" role="form">
+		<div class="row">
+			<ui-handsontable id="planilha" minSpareRows="1" stretchH="'last'" manualColumnMove="true" manualColumnResize="true" columnSorting="true" selectIndex="mySelectedIndex" rowheaders="true" height="calcHeight" width="calcWidth" datarows="item in db.items">
+				<datacolumn width="50" value="item.id" title="'Código'"></datacolumn>
+				<datacolumn width="100" value="item.name" title="'Nome Aluno'"></datacolumn>
+				<datacolumn width="100" value="item.escola" title="'Escola'"></datacolumn>
+				<datacolumn width="100" value="item.funcao" title="'Função'"></datacolumn>
+				<datacolumn width="100" title="'Ano'">
+					<optionlist datarows="option in item.ano" clickrow="item.ano = option.ano"></optionlist>
+				</datacolumn>
+				<datacolumn width="100" title="'Ano'">
+					<optionlist datarows="option in item.ano" clickrow="item.ano = option.ano"></optionlist>
+				</datacolumn>
+				<datacolumn width="100" title="'Ano'">
+					<optionlist datarows="option in item.ano" clickrow="item.ano = option.ano"></optionlist>
+				</datacolumn>
+				<datacolumn width="100" title="'Ano'">
+					<optionlist datarows="option in item.ano" clickrow="item.ano = option.ano"></optionlist>
+				</datacolumn>
+			</ui-handsontable>
+		</div>
+	</section>
+
+	<!-- scope mini bar bottom -->
+	<section id="barExcel" class="form-horizontal" role="form">
+		<div class="row"></div>
+	</section>
+
+	<!-- Src js -->
+	<script src="bower_components/jquery/jquery.min.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="js/vendor/angular-ui-handsontable.full.js"></script>
+	<script src="js/main.js"></script>
+
 </body>
 </html>
